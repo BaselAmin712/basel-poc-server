@@ -2,6 +2,6 @@ from fastapi import APIRouter
 
 router = APIRouter()
 
-@router.get("/firstRoute")
-def read_item():
-    return {"this is first route"}
+@router.get("/checkConnection")
+def check_connection():
+    return {"connection": "You are successfully connected to the poc-server"}
